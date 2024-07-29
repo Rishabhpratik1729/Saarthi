@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(rgb(29, 29, 29), rgb(172, 171, 172));
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+ 
+  width: 380px;
+  min-width: 300px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+section p .thank {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    margin-bottom: 10px;
+    color: rgb(255, 253, 253);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    filter: drop-shadow(0 0 7px rgb(255, 255, 255,0.8) );
+}
+h1 {
+    text-align: start;
+    margin-bottom: 10px;
+    color: rgb(212, 210, 210);
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 50%;
+    margin: auto;
+  }
+
+  section p .thank {
+    margin-left: 0; /* Adjusted for smaller screens */
+    margin-top: 20px; /* Adjusted for smaller screens */
+    text-align: center; /* Center the text on smaller screens */
+  }
+
+  h1 {
+    text-align: center; /* Center the text on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  section p .thank {
+    margin-left: 0; /* Adjusted for even smaller screens */
+    margin-top: 20px; /* Adjusted for even smaller screens */
+    text-align: center; /* Center the text on even smaller screens */
+  }
+
+  h1 {
+    text-align: center; /* Center the text on even smaller screens */
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: rgb(22, 22, 22);
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%; /* Adjusted for better responsiveness */
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #e4ecee;
+  color: #0c0c0c;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+button:hover{
+  background: #171717;
+  color:#e4ecee;
+}
+.back {
+  background-color: #3e3e3e;
+  color:#fff;
+  border-radius: 50px;
+}
+.back-btn{
+  color:#fff;
+  font-size: 20px;
+}
